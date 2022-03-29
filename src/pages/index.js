@@ -54,7 +54,7 @@ export default function HomePage(props) {
         </div>
       </CircleSpring>
     </section>
-
+{/*
     <SWRConfig value={{ fallback }}>
     <div className="flex flex-col gap-y-6">
       <div className="border-t border-gray-500 pt-4">
@@ -68,11 +68,12 @@ export default function HomePage(props) {
     </div>
   </SWRConfig>
 
-
+*/}
   </section>
   );
 }
 
+{/*
 export async function getStaticProps() {
   const readStats = await getReadStats();
   const githubUser = await getGithubUser();
@@ -87,3 +88,5 @@ export async function getStaticProps() {
     revalidate: 60,
   };
 }
+
+*/}
