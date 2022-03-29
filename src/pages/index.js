@@ -6,13 +6,16 @@ import Link from '@/components/Common/Link';
 
 import contact from '@/data/contact';
 
-// Dashboard imps
+/* Dashboard imps
 import { SWRConfig } from 'swr';
 import { getReadStats } from '@/lib/wakatime';
 import { getGithubUser } from '@/lib/github';
 import CodingActive from '@/components/CodingActive';
 import Contributions from '@/components/Contributions';
+*/
+
 HomePage.description = `Hey, I'm Daniel Vlassov!`;
+
 
 export default function HomePage(props) {
   const fallback = { props }
@@ -41,15 +44,15 @@ export default function HomePage(props) {
       </div>
 
       <CircleSpring>
-        <div className="my-4 flex h-99 w-44 items-center justify-center sm:my-0 sm:mx-21 sm:h-48 sm:w-48">
+        <div className="my-4 flex h-99 w-44 items-center justify-center sm:my-0 sm:mx-21 sm:h-64 sm:w-64">
           <Image
             className="rounded-full"
             alt="Daniel Vlassov"
             unoptimized
             objectFit="cover"
             src={avatar.src}
-            width={400}
-            height={400}
+            width={600}
+            height={600}
           />
         </div>
       </CircleSpring>
@@ -73,7 +76,7 @@ export default function HomePage(props) {
   );
 }
 
-{/*
+/*
 export async function getStaticProps() {
   const readStats = await getReadStats();
   const githubUser = await getGithubUser();
@@ -89,4 +92,4 @@ export async function getStaticProps() {
   };
 }
 
-*/}
+*/
